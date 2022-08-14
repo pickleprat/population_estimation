@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Estimation from a sample</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1><strong>Estimate population attributes from sample...</strong></h1>
+        <br> 
+        
+        <form method="GET" action="/">
+            
+        
+
+            <div class="mb-3">
+                <label for="mean" class="form-label">Sample Mean X</label>
+                <input name="mean" type="text" class="form-control" id="mean" placeholder="Enter sample mean here">
+            </div>
+
+            <div class="mb-3">
+                <label for="stdev" class="form-label">Sample Standard deviation S </label>
+                <input name="stdev" type="text" class="form-control" id="stdev" placeholder="Enter standard deviation here">
+            </div>
+
+            <div class="mb-3">
+                <label for="count" class="form-label">Sample count n </label>
+                <input name="count" type="text" class="form-control" id="count" placeholder="Enter sample count">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="confidence" class="form-label">Enter confidence level </label>
+                <input name="confidence" type="text" class="form-control" id="confidence" placeholder="Must be less than 1 and greater than 0">
+            </div>
+
+            <div class="container">
+                <button id="button" type="submit" class="btn btn-danger" >Compute</button>
+            </div>
+
+        </form>
+
+        <hr> 
+
+        <h2><strong><italic>Solutions</italic></strong></h2>
+        <br>
+        <br>
+
+        
+        <h4>{{ mean  }}</h4>
+        <h4>{{ var  }}</h4>
+        <h4>{{ std  }}</h4>
+
+
+
+       
+
+        <hr>
+    
+    </body>
+</html>
